@@ -24,6 +24,8 @@ body > #root > .App.light{
   min-height: 100vh;
   margin: 0;
   font-family: 'Lato', sans-serif;
+  /* color: #9c88ff !important; */
+
 }
 
 body > #root > .App.dark{
@@ -37,34 +39,14 @@ body > #root > .App.dark{
   font-family: 'Lato', sans-serif;
 }
 
-img{
-  border-style: none;
-  outline: none;
-}
 
-.themeToggleBtn, .themeToggleBtn:focus {
-  cursor: pointer;
-  position: relative;
-  top: 0.3rem;
-  text-align: left;
-  border-width: initial;
-  border-style: none;
-  border-color: initial;
-  border-image: initial;
-  background: none;
-  outline: none;
-  margin-left: 5px;
-}
 
 .container {
   margin: 30px auto;
+  /* width: 350px; */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 75px;
-}
-
-.App.dark form .btn{
-  background-color: #85bb30;
 }
 
 h1 {
@@ -72,25 +54,20 @@ h1 {
   margin: 0;
 }
 
-.App.light h1.balance {
-  color: #9c88ff;
+.App.light {
+	h1{
+		color: red;
+	}
 }
 
-.App.dark h1.balance {
-  color: #a8ff60;
-}
-
-.App.dark h1, 
-.App.dark h2, 
-.App.dark h3, 
-.App.dark h4,  
-.App.dark label {
-  color: #f7f7f7;
-} 
+// h1.balance{
+//   color: #9c88ff !important;
+// }
 
 h2.header {
-  margin: 30px 0px;
+  margin-bottom: 75px;
   text-align: center;
+  /* color:; */
 }
 
 h3 {
@@ -102,15 +79,6 @@ h3 {
 h4 {
   margin: 0;
   text-transform: uppercase;
-  /* color: black; */
-}
-
-.App.dark .inc-exp-container h4{
-  color: black;
-}
-
-.leftSide {
-  padding-top: 40px;
 }
 
 .inc-exp-container {
@@ -118,8 +86,7 @@ h4 {
   box-shadow: var(--box-shadow);
   padding: 20px;
   display: flex;
-  justify-content: center;
-
+  justify-content: space-between;
   margin: 20px 0;
 }
 
@@ -251,8 +218,6 @@ input[type='number'] {
     .container {
       display: block;
       width: 300px;
-      justify-items: center;
-      align-items: center;
     }
     .delete-btn{
       opacity: 1;
